@@ -1,0 +1,6 @@
+<ul class="shopping-list">
+  <li *ngFor="let item of items;index as i" class="shopping-item">
+    {{item.name}}
+      <button class="btn btn-danger" (click)="removeItem(i)">Delete</button>
+  </li>
+</ul>

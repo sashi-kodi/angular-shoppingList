@@ -1,0 +1,10 @@
+
+<app-addshoppingitem (addItem)="addItem($event)"></app-addshoppingitem>
+<section *ngIf="items.length">
+<h3>
+Shopping List:
+</h3>
+    <app-displaylist [items]="items" (remove)="remove($event)"></app-displaylist>
+
+</section>
+
